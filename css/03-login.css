@@ -1,0 +1,228 @@
+:root{
+    --forest-green:#5E8B44;
+    --sky:#EEE8CC;
+    --icon:#0D3330;
+    --border:#898d44;
+    
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+
+}
+
+body{
+    background-color: var(--forest-green);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--forest-green);
+}
+
+.banner{
+    height: 50%;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.banner img{
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    object-position: bottom left;
+    opacity: 0.9;
+    filter: brightness(0.8);
+    -webkit-filter: brightness(0.8);
+}
+
+.login-form{
+    background-color: var(--sky);
+    align-items: center;
+    height: 450px;
+    width: 430px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%, -30%);
+    -webkit-transform: translate(-50%, -30%);
+    -moz-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    -o-transform: translate(-50%, -30%);
+    padding: 80px 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icon{
+    background-color: var(--icon);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -5%);
+    z-index: 5;
+    -webkit-transform: translate(-50%, -5%);
+    -moz-transform: translate(-50%, -5%);
+    -ms-transform: translate(-50%, -5%);
+    -o-transform: translate(-50%, -5%);
+    color: var(--sky);
+    border: 4px solid var(--border);
+}
+
+.icon i{
+    display: block;
+    line-height: 30px;
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-bottom: -10px;
+
+}
+
+.icon .bar {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    height: 0px;
+    background-color: var(--sky);
+    
+}
+
+.icon .bar i{
+    font-size: 0.2rem;
+    color: var(--forest-green);
+}
+
+.login-form h2{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: var(--forest-green);
+}
+
+.login-form .form-row{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 10px;
+}
+
+.login-form .form-row :nth-child(2){
+    margin-bottom: 10px;
+}
+
+.login-form .form-row label{
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0.6;
+    color: var(--forest-green);
+}
+
+.login-form .form-row input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: var(--icon);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.login-form .form-row input:focus{
+    background-color: var(--icon);
+    color: var(--sky);
+}
+
+.login-form .remember{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.login-form .remember label{
+    font-size: .8rem;
+    color: var(--forest-green);
+}
+
+.login-form button{
+    height: 45px;
+    width: 100%;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: none;
+    outline: none;
+    color: var(--sky);
+    background-color: var(--icon);
+    font-size: 1.2rem;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    margin-bottom: 20px;
+}
+
+.login-form button:hover{
+    background-color: var(--forest-green);
+    color: var(--icon);
+    
+}
+
+.login-form .option{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    
+}
+
+.login-form .option a{
+    font-size: 0.8rem;
+    color: var(--forest-green);
+    font-weight: 900;
+    
+}
+
+.login-form .option a:hover{
+    color: #0D3330;
+}
+
+.login-form .freepik{
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.login-form .freepik a{
+    text-decoration:underline;
+}
